@@ -1,2 +1,0 @@
-# tdxm-admin
-tdxm-admin
