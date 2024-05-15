@@ -32,7 +32,7 @@ import LocalStorageKeyConst from '/@/constants/local-storage-key-const.js';
 
 // 引入百度地图
 import BaiduMap from 'vue-baidu-map-3x'
-
+import "./common/input.css"
 /*
  * -------------------- ※ 着重 解释说明下main.js的初始化逻辑 begin ※ --------------------
  *
