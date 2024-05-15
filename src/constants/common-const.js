@@ -18,6 +18,10 @@ export const PAGE_PATH_LOGIN = '/login';
 //404页面名字
 export const PAGE_PATH_404 = '/404';
 
+
+// 大屏页面
+export const PAGE_PATH_DASHBOARD = '/largescreen';
+
 export const showTableTotal = function (total) {
   return `共${total}条`;
 };
