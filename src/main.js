@@ -68,7 +68,7 @@ async function getLoginInfo() {
 
 function initVue() {
   let vueApp = createApp(App);
-  let app = vueApp.use(router).use(store).use(i18n).use(Antd).use(BaiduMap).use(smartEnumPlugin, constantsInfo).use(privilegePlugin).use(JsonViewer);
+  let app = vueApp.use(router).use(store).use(i18n).use(Antd).use(BaiduMap,{ak:"A6rwq5JDKN0wCVqQCffqmQxYMlsqewKO"}).use(smartEnumPlugin, constantsInfo).use(privilegePlugin).use(JsonViewer);
   //注入权限
   app.directive('privilege', {
     mounted(el, binding) {

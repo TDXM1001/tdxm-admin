@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <!--
   * 登录
   * 
@@ -99,7 +100,8 @@
   </div>
 </template>
 <script setup>
-  import { message, notification, Button } from 'ant-design-vue';
+  // notification 消息提示
+  import { message,  Button } from 'ant-design-vue';
   import { onMounted, onUnmounted, reactive, ref } from 'vue';
   import { useRouter } from 'vue-router';
   import { loginApi } from '/@/api/system/login-api';
@@ -145,24 +147,24 @@
       }
     };
 
-    notification['success']({
-      message: '温馨提示',
-      description: 'SmartAdmin 提供 9种 登录背景风格哦！',
-      duration: null,
-      onClick: () => {},
-      btn: () =>
-        h(
-          Button,
-          {
-            type: 'primary',
-            target: '_blank',
-            size: 'small',
-            href: 'https://smartadmin.vip/views/v3/front/Login.html',
-            onClick: () => {},
-          },
-          { default: () => '去看看' }
-        ),
-    });
+    // notification['success']({
+    //   message: '温馨提示',
+    //   description: 'SmartAdmin 提供 9种 登录背景风格哦！',
+    //   duration: null,
+    //   onClick: () => {},
+    //   btn: () =>
+    //     h(
+    //       Button,
+    //       {
+    //         type: 'primary',
+    //         target: '_blank',
+    //         size: 'small',
+    //         href: 'https://smartadmin.vip/views/v3/front/Login.html',
+    //         onClick: () => {},
+    //       },
+    //       { default: () => '去看看' }
+    //     ),
+    // });
   });
 
   onUnmounted(() => {

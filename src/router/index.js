@@ -87,6 +87,7 @@ const routerMap = new Map();
 
 export function buildRoutes(menuRouterList) {
   let menuList = menuRouterList ? menuRouterList : useUserStore().getMenuRouterList || [];
+  console.log("获取的menuList",menuList);
   /**
    * 1、构建整个路由信息
    * 2、添加到路由里
@@ -143,6 +144,7 @@ export function buildRoutes(menuRouterList) {
     }
     routerList.push(route);
     routerMap.set(e.menuId.toString(), route);
+    console.log("最后的routerList",routerList);
   }
 
   //2、添加到路由里
